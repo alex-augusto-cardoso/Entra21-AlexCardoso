@@ -52,4 +52,16 @@ Exercicio 3
     else{
     alert(`O numero está fora da faixa`)
     }
-    else(``)
+    else{
+    alert(`O numero está fora da faixa`)
+    }
+
+    Exercicio 7
+    Boolean(A > 10 && B <= 20) // false
+    Boolean(A > 10 || B <= 20) // true
+    Boolean((A === 10 || B > 20) && B === 20) // true
+    console.log(null || 2 || undefined) // 2
+    Boolean(0 && 1) // false
+
+    Exercicio 8
+    let valor =
