@@ -1,0 +1,107 @@
+ //Exercicio 1
+      console.log(" Oi meu nome e alex")
+
+       //Exercicio 2
+      console.log("1 cadastrar fucionario \n2) listar fucionario \n3) editar fucionario \n4) deletar fucionario \n5) sair")
+      
+      //Exercicio 3
+      let nome = "João"
+        let admin
+        nome = "João"
+        admin = nome
+        console.log(nome)
+
+        //Exercicio 4
+        let primeiroNome = "Alex"
+        let idade = 25
+        let peso = 83
+        let altura = 1.73
+        let telefone = 996320159
+
+        console.log(`O meu nome e ${primeiroNome}`) 
+        console.log(`A minha idade e ${idade}`)
+        console.log(`O meu peso e ${peso}`)
+        console.log(`A minha autura e ${altura}`)
+        console.log(`O meu telefone e ${telefone}`)
+
+        //Exercicio 5
+        let titulo = "Escatologia" 
+        let edicao = 1
+        let autor = "João Alberto" 
+        let dataPublicacao = "10/05/2010"
+
+        console.log(`titulo: ${titulo}`)
+        console.log(`edição: ${edicao}`)
+        console.log(`autor: ${autor}`)
+        console.log(`data da publicação: ${dataPublicacao}`)
+
+        //Exercicio 6
+        let dataDeNascimento = "03/03/1990"
+        let quantidadeDeFilhos = 2
+        let nomeDoUsuario = "Lidiani"
+
+        //Exercicio 7
+        let nome = "João"
+        console.log(`Olá ${1}`) // Olá 1
+        console.log(`Olá ${"nome"}`) // Olá nome    
+        alert(`Olá ${nome}`) // Olá João
+
+        //Exercicio 8
+        Foi 121
+
+        //Exercicio 9
+        Foi 4, 5
+
+        //Exercicio 10
+        A) "" + 1 + 0 // ? "10"
+        B) "" - 1 + 0 // ? -1
+        C) 6 / "3" // ? 2
+        D) "2" * "3" // ? 6
+        E) 4 + 5 + "px" // ? "9px"
+        F) "$" + 4 + 5 // ? "$45"
+        G) "4" - 2 // ? 2
+
+        //Exercicio 11
+        let alturaRetangulo = Number(prompt("me de a altura do retangulo"))
+        let larguraRetangulo = Number(prompt("me de a largura do retangulo"))
+        let area = alturaRetangulo * larguraRetangulo
+        let perimetro = (alturaRetangulo * 2) + (larguraRetangulo * 2)
+        console.log(`area: ${area}`)
+        console.log(`perimetro: ${perimetro}`)
+
+        //Exercicio 12
+        let numero1 = Number(prompt("numero 1"))
+        let numero2 = Number(prompt("numero 2"))
+        let resultado = numero1 + numero2
+        console.log(resultado)
+
+        //Exercicio 13
+        let nota1 = Number(prompt("digite a nota 1"))
+        let nota2 = Number(prompt("digite a nota 2"))
+       let media = (nota1 + nota2) / 2
+       console.log(`media entre ${nota1} e ${nota2} e: ${media}`)
+
+
+        //Exercicio 14
+        let numero1 = Number(prompt("digite o numero 1"))
+        let numero2 = Number(prompt("digite o numero 2"))
+        let numero3 = Number(prompt("digite o numero 3"))
+        let resultado1 = numero1 ** 2
+        let resultado2 = numero2 ** 2
+        let resultado3 = numero3 ** 2
+        alert(`RESULTADOS\n${resultado1}\n${resultado2}\n${resultado3}`)
+        
+        //Exercicio 15
+        let a = 2 
+        let b = 4
+        console.log(a, b)
+        let aux = a
+        a = b
+        b = aux
+        console.log(a, b)
+
+
+        //Exercicio 16
+        let qtdMeses = Number(prompt("digite o numero de meses"))
+        let dias = qtdMeses * 30
+        alert(`Quantidade de dias é\n${dias}`)

@@ -1,0 +1,103 @@
+PS C:\Users\guest01\Desktop\Entra21-AlexCardoso> git add .\Primerio.html
+PS C:\Users\guest01\Desktop\Entra21-AlexCardoso> git status 
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Primerio.html
+
+PS C:\Users\guest01\Desktop\Entra21-AlexCardoso> git comit -n "Comit Inicial"
+git: 'comit' is not a git command. See 'git --help'.
+
+PS C:\Users\guest01\Desktop\Entra21-AlexCardoso> git log
+commit e37c18930d67e9f5f478cf524745edaa7d97e543 (HEAD -> master)
+Author: Ritchelly Henrique <Ritchellyh@gmail.com>
+Date:   Mon May 3 15:32:50 2021 -0300
+
+    Comit Inicial
+PS C:\Users\guest01\Desktop\Entra21-AlexCardoso> git config --global user.name "Alex"
+PS C:\Users\guest01\Desktop\Entra21-AlexCardoso> git config --global user.email "alex.augusto.cardoso95@gmail.com"
+PS C:\Users\guest01\Desktop\Entra21-AlexCardoso> git config --global --list
+user.name=Alex
+user.email=alex.augusto.cardoso95@gmail.com
+PS C:\Users\guest01\Desktop\Entra21-AlexCardoso>
+
+PS C:\Users\guest01\Desktop\Entra21-AlexCardoso> git log
+commit e37c18930d67e9f5f478cf524745edaa7d97e543 (HEAD -> master)
+Author: Ritchelly Henrique <Ritchellyh@gmail.com>
+Date:   Mon May 3 15:32:50 2021 -0300
+
+    Comit Inicial
+PS C:\Users\guest01\Desktop\Entra21-AlexCardoso>
+PS C:\Users\guest01\Desktop\Entra21-AlexCardoso> git add .
+PS C:\Users\guest01\Desktop\Entra21-AlexCardoso> git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   Primerio.html
+        new file:   Segundo.html
+
+PS C:\Users\guest01\Desktop\Entra21-AlexCardoso> git restore --staged .\Primerio.html
+PS C:\Users\guest01\Desktop\Entra21-AlexCardoso> git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Segundo.html
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Primerio.html
+
+PS C:\Users\guest01\Desktop\Entra21-AlexCardoso> git add .
+PS C:\Users\guest01\Desktop\Entra21-AlexCardoso> 
+PS C:\Users\guest01\Desktop\Entra21-AlexCardoso> git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   Primerio.html
+        new file:   Segundo.html
+
+PS C:\Users\guest01\Desktop\Entra21-AlexCardoso> git commit -m "Modifiquei o arquivo"
+[master c78e2dd] Modifiquei o arquivo
+ 2 files changed, 11 insertions(+)
+ create mode 100644 Segundo.html
+PS C:\Users\guest01\Desktop\Entra21-AlexCardoso> git log
+commit c78e2dd4c2b88caf20e25831dafec56dee3d92e4 (HEAD -> master)
+Author: Alex <alex.augusto.cardoso95@gmail.com>
+Date:   Mon May 3 16:01:48 2021 -0300
+
+    Modifiquei o arquivo
+
+commit e37c18930d67e9f5f478cf524745edaa7d97e543
+Author: Ritchelly Henrique <Ritchellyh@gmail.com>
+Date:   Mon May 3 15:32:50 2021 -0300
+
+    Comit Inicial
+PS C:\Users\guest01\Desktop\Entra21-AlexCardoso> git branch -M main
+PS C:\Users\guest01\Desktop\Entra21-AlexCardoso> git remote add origin https://github.com/alex-augustoerror: remote origin already exists.
+PS C:\Users\guest01\Desktop\Entra21-AlexCardoso> git remote
+origin
+PS C:\Users\guest01\Desktop\Entra21-AlexCardoso> git remote --list
+error: unknown option `list'
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --verbose         be verbose; must be placed before a subcommand
+
+PS C:\Users\guest01\Desktop\Entra21-AlexCardoso> git remote remove origin
+PS C:\Users\guest01\Desktop\Entra21-AlexCardoso> git remote add origin https://github.com/alex-augusto-cardoso/Entra21-AlexCardoso.git
+PS C:\Users\guest01\Desktop\Entra21-AlexCardoso> 

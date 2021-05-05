@@ -1,0 +1,55 @@
+Exercício 1
+console.log(!10) // false
+console.log(!!"String") // true
+console.log(!!2.3) // true
+console.log(Boolean(null)) // false
+
+Exercicio 2
+console.log(10 > 2) // true
+console.log(5 >= "5") // true
+console.log(5 >= "5") // true
+console.log("apple" > "pineapple") false
+console.log("2" > "12") true
+console.log(undefined == null) true
+console.log(undefined === null) false
+console.log(null == "\n0\n") false
+console.log(null === +"\n0\n") false
+
+Exercicio 3
+    let valorA = Number(prompt("digite o valor A"))
+    if(valorA>10){
+    console.log("o valo A e maior que o 10. Programa finalizado...")
+    }
+    else{
+    console.log("programa finalizado...")
+    }
+
+    Exercicio 4
+    let numero = Number(prompt("Digite um numero"))
+    if (numero%2==0){
+     let metadeNumero = numero/2
+     alert(`${metadeNumero}\nPrograma finalizado...´)   
+    }
+    else {
+    alert ("Programa finalizado...")
+    }
+
+    Exercicio 5
+    let numero = Number(prompt("Digite um numero"))
+    if (numero%2==0){
+    alert(`O numero e par`)
+    }
+    else{
+    alert(`O numero e impar`)
+    }
+    let numero = Number()
+
+    Exercicio 6
+    let numero = Number(prompt("Digite o numero"))
+    if (numero > 20){
+    alert(`O numero está na faixa entre 20 e 90`)
+    }
+    else{
+    alert(`O numero está fora da faixa`)
+    }
+    else(``)
