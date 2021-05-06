@@ -18,7 +18,7 @@
     Exercicio 3
     let valorA = Number(prompt("digite o valor A"))
     if(valorA>10){
-    console.log("o valo A e maior que o 10. Programa finalizado...")
+    console.log("o valor A e maior que o 10. Programa finalizado...")
     }
     else{
     console.log("programa finalizado...")
@@ -42,26 +42,23 @@
     else{
     alert(`O numero e impar`)
     }
-    let numero = Number()
 
     Exercicio 6
     let numero = Number(prompt("Digite o numero"))
-    if (numero > 20){
+    if (numero > 20 && numero < 90){
     alert(`O numero está na faixa entre 20 e 90`)
     }
     else{
     alert(`O numero está fora da faixa`)
     }
-    else{
-    alert(`O numero está fora da faixa`)
-    }
+    
 
     Exercicio 7
     Boolean(A > 10 && B <= 20) // false
     Boolean(A > 10 || B <= 20) // true
     Boolean((A === 10 || B > 20) && B === 20) // true
     console.log(null || 2 || undefined) // 2
-    Boolean(0 && 1) // false
+    Boolean(0 && 1) // 0
 
     Exercicio 8
     let valor1 = Number(prompt("Digite o 1° valor"))
@@ -115,9 +112,17 @@
     }
     console.log("Programa finalizado...")
 
-
     Exercicio 12
-    let condNum = Number(prompt("Digite um numero"))
+    let numero = Number(prompt("Digite um numero"))
+    if (numero%5==0){
+    alert(`O numero e divisivel por 5`)
+    }
+    else{
+    alert(`O numero nao e divisivel por 5`)
+    }
+
+    Exercicio 13
+    let numCond = Number(prompt("Digite um numero"))
     if (numCond >= 0 ) {
     console.log(`${Math.sqrt(numCond)}`)
     }
@@ -128,10 +133,10 @@
 
 
 
-    Exercício 13 
-    let salario = 1000
-    let prest = 100
-    if ((prest/salario) > 0.2  ) {
+    Exercício 14
+    let salario = Number(prompt("Digite seu salario")) 
+    let prest = Number(prompt("Digite a prestacao"))
+    if (salario < (prest*0.2)) {
     console.log("empréstimo não concedido")
     }
     else {
@@ -139,28 +144,40 @@
     }
     console.log("Programa finalizado...")
 
-
-
-
-    Exercício 14
-    
-
-
-
     Exercício 15
-
+    let golTime1 =  Number(prompt("Me diga quantos gols o time 1 fez."))
+    let golTime2 =  Number(prompt("Me diga quantos gols o time 2 fez."))
+    if (golTime === golTime){
+    console.log("foi um empate!")        
+    }
+    else if (golTime1 > golTime2){
+    console.log("O time 1  ganhou!")        
+    }
+    else if (golTime2 > golTime1){
+     console.log("O time 2 ganhou!")       
+    }
 
     Exercício 16
-
+    let idadeUsuario = Number(prompt("Me diga a sua idade"))    
+    if (idadeUsuario<16){
+    console.log("Não precisa votar")        
+    } 
+    else if ((idadeUsuario>=16 && idadeUsuario<18) || (idadeUsuario>=70)){ 
+    console.log("voto opcional")
+    }
+    else{
+    console.log("voto obrigatorio")        
+    }
 
     Exercício 17
-
+     let numeroA = Number(prompt("Me diga um numero"))
+     let numeroB = Number(prompt("Me diga um numero"))
+     let numeroc = Number(prompt("Me diga um numero"))   
 
     Exercício 18
 
 
-    Exercício19 
-
+    Exercício 19
 
 
     Exercício 20
@@ -168,6 +185,10 @@
 
 
     Exercício 21
+
+
+
+    
 
     
     
