@@ -1,21 +1,21 @@
-Exercício 1
-console.log(!10) // false
-console.log(!!"String") // true
-console.log(!!2.3) // true
-console.log(Boolean(null)) // false
+    Exercício 1
+    console.log(!10) // false
+    console.log(!!"String") // true
+    console.log(!!2.3) // true
+    console.log(Boolean(null)) // false
 
-Exercicio 2
-console.log(10 > 2) // true
-console.log(5 >= "5") // true
-console.log(5 >= "5") // true
-console.log("apple" > "pineapple") false
-console.log("2" > "12") true
-console.log(undefined == null) true
-console.log(undefined === null) false
-console.log(null == "\n0\n") false
-console.log(null === +"\n0\n") false
+    Exercicio 2
+    console.log(10 > 2) // true
+    console.log(5 >= "5") // true
+    console.log(5 >= "5") // true
+    console.log("apple" > "pineapple") false
+    console.log("2" > "12") true
+    console.log(undefined == null) true
+    console.log(undefined === null) false
+    console.log(null == "\n0\n") false
+    console.log(null === +"\n0\n") false
 
-Exercicio 3
+    Exercicio 3
     let valorA = Number(prompt("digite o valor A"))
     if(valorA>10){
     console.log("o valo A e maior que o 10. Programa finalizado...")
@@ -27,8 +27,8 @@ Exercicio 3
     Exercicio 4
     let numero = Number(prompt("Digite um numero"))
     if (numero%2==0){
-     let metadeNumero = numero/2
-     alert(`${metadeNumero}\nPrograma finalizado...´)   
+    let metadeNumero = numero/2
+    alert(`${metadeNumero}\nPrograma finalizado...´)   
     }
     else {
     alert ("Programa finalizado...")
@@ -64,4 +64,154 @@ Exercicio 3
     Boolean(0 && 1) // false
 
     Exercicio 8
-    let valor =
+    let valor1 = Number(prompt("Digite o 1° valor"))
+    let valor2 = Number(prompt("Digite o 2° valor"))
+    let valor3 = Number(prompt("Digite o 3° valor"))
+    if (valor1 > valor2 && valor1 > valor3) {
+    console.log(`O valor ${valor1} é o maior valor`)
+            }
+    else if (valor2 > valor1 && valor2 > valor3) {
+    console.log(`O valor ${valor2} é o maior valor`)
+    }
+    else {
+    console.log(`O valor ${valor3} é o maior valor`)
+    }
+    console.log("Programa finalizado...")
+
+    Exercicio 9
+    let a = 1
+    let b = 1
+    console.log((a + b < 4) ? "Abaixo" : "Acima")
+    if (a + b < 4) {
+    resultado = "Abaixo"
+    } 
+    else {
+    resultado = "Acima"
+    }
+
+    Exercicio 10
+    let lado1 = Number(prompt("Digite a 1° medida do triangulo"))
+    let lado2 = Number(prompt("Digite a 2° medida do triangulo"))
+    let lado3 = Number(prompt("Digite a 3° medida do triangulo"))
+    if (lado1 === lado2 && lado1 === lado3) {
+    console.log("O Triangulo é Equilátero")        
+    }
+    else if (lado1 != lado2 && lado1 != lado3 && lado2 != lado3){ 
+    console.log("O Triangulo é Escaleno")  
+    }
+    else {
+    console.log("O Triangulo é Isosceles")
+    }
+    console.log("Programa finalizado...")
+
+
+    Exercicio 11
+    let numCond = Number(prompt("Digite um numero"))
+    if (numCond >= 0 ) {
+    console.log(`${Math.sqrt(numCond)} `)
+    }
+    else {
+    console.log(`O valor é Invalido`)
+    }
+    console.log("Programa finalizado...")
+
+
+    Exercicio 12
+    let condNum = Number(prompt("Digite um numero"))
+    if (numCond >= 0 ) {
+    console.log(`${Math.sqrt(numCond)}`)
+    }
+    else {
+    console.log(`${numCond**2}`)
+    }
+    console.log("Programa finalizado...")
+
+
+
+    Exercício 13 
+    let salario = 1000
+    let prest = 100
+    if ((prest/salario) > 0.2  ) {
+    console.log("empréstimo não concedido")
+    }
+    else {
+    console.log("empréstimo concedido")
+    }
+    console.log("Programa finalizado...")
+
+
+
+
+    Exercício 14
+    let x = Number(prompt("Digite um número))
+    switch (x){
+    case 1:
+    console.log("domingo")
+    break;
+    case 2:
+    console.log("segunda-feira")
+    break;
+    case 3:
+    console.log("terça-feira")
+    break;
+    case 4:
+    console.log("quarta-feira")
+    break;
+    case 5
+    console.log("quinta-feira")
+    break;
+    case 6
+    console.log("sexta-feira")
+    break;
+    case 7
+    console.log("Sábado")  
+    default:
+    console.log("O numero digitado não corresponde a um dia da semana") 
+    break;             
+    }
+
+
+
+    Exercício 15
+    let nomeMes = "";
+    switch (nomeMes) {
+    case 1:
+    nomeMes = "Janeiro";
+    break;
+    case 2:
+    nomeMes = "Fevereiro";
+    break;
+    case 3:
+    nomeMes = "Março";
+    break;
+    case 4:
+    nomeMes = "Abril";
+    break;
+    case 5:
+    nomeMes = "Maio";
+    break;
+    case 6:
+    nomeMes = "Junho";
+    break;
+    case 7:
+    nomeMes = "Julho";
+    break;
+    case 8:
+    nomeMes = "Agosto";
+    break;
+    case 9:
+        nomeMes = "Setembro";
+    break;
+    case 10:
+    nomeMes = "Outubro";
+    break;
+    case 11:
+    nomeMes = "Novembro";
+    break;
+    case 12:
+    nomeMes = "Dezembro";
+    break;
+    default:
+    nomeMes = "Mês inexistente";
+    }
+    console.log(nomeMes);
