@@ -1,10 +1,10 @@
-    Exercício 1
+    // Exercício 1
     console.log(!10) // false
     console.log(!!"String") // true
     console.log(!!2.3) // true
     console.log(Boolean(null)) // false
 
-    Exercicio 2
+    // Exercicio 2
     console.log(10 > 2) // true
     console.log(5 >= "5") // true
     console.log(5 >= "5") // true
@@ -15,7 +15,7 @@
     console.log(null == "\n0\n") false
     console.log(null === +"\n0\n") false
 
-    Exercicio 3
+    // Exercicio 3
     let valorA = Number(prompt("digite o valor A"))
     if(valorA>10){
     console.log("o valor A e maior que o 10. Programa finalizado...")
@@ -24,7 +24,7 @@
     console.log("programa finalizado...")
     }
 
-    Exercicio 4
+    // Exercicio 4
     let numero = Number(prompt("Digite um numero"))
     if (numero%2==0){
     let metadeNumero = numero/2
@@ -34,7 +34,7 @@
     alert ("Programa finalizado...")
     }
 
-    Exercicio 5
+    // Exercicio 5
     let numero = Number(prompt("Digite um numero"))
     if (numero%2==0){
     alert(`O numero e par`)
@@ -43,7 +43,7 @@
     alert(`O numero e impar`)
     }
 
-    Exercicio 6
+    // Exercicio 6
     let numero = Number(prompt("Digite o numero"))
     if (numero > 20 && numero < 90){
     alert(`O numero está na faixa entre 20 e 90`)
@@ -53,14 +53,14 @@
     }
     
 
-    Exercicio 7
+    // Exercicio 7
     Boolean(A > 10 && B <= 20) // false
     Boolean(A > 10 || B <= 20) // true
     Boolean((A === 10 || B > 20) && B === 20) // true
     console.log(null || 2 || undefined) // 2
     Boolean(0 && 1) // 0
 
-    Exercicio 8
+    // Exercicio 8
     let valor1 = Number(prompt("Digite o 1° valor"))
     let valor2 = Number(prompt("Digite o 2° valor"))
     let valor3 = Number(prompt("Digite o 3° valor"))
@@ -75,7 +75,7 @@
     }
     console.log("Programa finalizado...")
 
-    Exercicio 9
+    // Exercicio 9
     let a = 1
     let b = 1
     console.log((a + b < 4) ? "Abaixo" : "Acima")
@@ -86,7 +86,7 @@
     resultado = "Acima"
     }
 
-    Exercicio 10
+    // Exercicio 10
     let lado1 = Number(prompt("Digite a 1° medida do triangulo"))
     let lado2 = Number(prompt("Digite a 2° medida do triangulo"))
     let lado3 = Number(prompt("Digite a 3° medida do triangulo"))
@@ -102,7 +102,7 @@
     console.log("Programa finalizado...")
 
 
-    Exercicio 11
+    // Exercicio 11 
     let numCond = Number(prompt("Digite um numero"))
     if (numCond >= 0 ) {
     console.log(`${Math.sqrt(numCond)} `)
@@ -112,7 +112,7 @@
     }
     console.log("Programa finalizado...")
 
-    Exercicio 12
+    // Exercicio 12
     let numero = Number(prompt("Digite um numero"))
     if (numero%5==0){
     alert(`O numero e divisivel por 5`)
@@ -121,7 +121,7 @@
     alert(`O numero nao e divisivel por 5`)
     }
 
-    Exercicio 13
+    // Exercicio 13
     let numCond = Number(prompt("Digite um numero"))
     if (numCond >= 0 ) {
     console.log(`${Math.sqrt(numCond)}`)
@@ -133,7 +133,7 @@
 
 
 
-    Exercício 14
+    // Exercício 14
     let salario = Number(prompt("Digite seu salario")) 
     let prest = Number(prompt("Digite a prestacao"))
     if (salario < (prest*0.2)) {
@@ -144,7 +144,7 @@
     }
     console.log("Programa finalizado...")
 
-    Exercício 15
+    // Exercício 15
     let golTime1 =  Number(prompt("Me diga quantos gols o time 1 fez."))
     let golTime2 =  Number(prompt("Me diga quantos gols o time 2 fez."))
     if (golTime === golTime){
@@ -157,7 +157,7 @@
      console.log("O time 2 ganhou!")       
     }
 
-    Exercício 16
+    // Exercício 16
     let idadeUsuario = Number(prompt("Me diga a sua idade"))    
     if (idadeUsuario<16){
     console.log("Não precisa votar")        
@@ -169,22 +169,51 @@
     console.log("voto obrigatorio")        
     }
 
-    Exercício 17
+    // Exercício 17
      let numeroA = Number(prompt("Me diga um numero"))
      let numeroB = Number(prompt("Me diga um numero"))
-     let numeroc = Number(prompt("Me diga um numero"))   
+     let numeroc = Number(prompt("Me diga um numero"))  
+     if (numeroA >= numeroB && numeroA >= numeroC){
+     if (numeroB >= numeroC){
+      console.log(`A ordem dos numeros e ${numeroA}, ${numeroB} e ${numeroC}`)      
+      }       
+     else if (numeroC >= numeroB){
+     console.log(`A ordem dos numeros e ${numeroA}, ${numeroC} e ${numeroB`)        
+        } 
+     }
+     else if(numeroB >= numeroA && numeroB >= numeroC){
+     if(numeroA >= numeroC){
+     console.log(`A ordem dos numeros e ${numeroB}, ${numeroA} e ${numeroC}`)       
+     }  
+     else if (numeroC >= numeroA){
+     console.log(`A ordem dos numeros é ${numeroB}, {numeroC} e {numeroA}`)        
+        }     
+     }
+     else if (numeroC >= numeroA && numeroC >= numeroB){
+     if (numeroA >= numeroB){ 
+     console.log(`A ordem dos numeros é ${numeroC}, ${numeroA} e ${numeroB}`)        
+         } 
+     else if (numeroB >= numeroA){
+     console.log(`A ordem dos numeros é ${numeroC}, ${numeroB} e ${numeroA}`)      
+        }
+     }   
+    // Exercício 18
+     let idadePessoa = Number(prompt("Me diga a sua idade"))
+     ( idadePessoa<18 || idadePessoa>67){
+     console.log(`voce tem ${idadePessoa} anos, logo você não pode doar sangue`)        
+     } 
+     else{
+     console.log(`Você tem ${idadePessoa} anos, logo você pode doar sangue.`)        
+     }  
 
-    Exercício 18
+    // Exercício 19
+    let numeroEscolido = Number(prompt("Me diga um numero entre 1 e 7"))    
 
-
-    Exercício 19
-
-
-    Exercício 20
+    // Exercício 20
 
 
 
-    Exercício 21
+    // Exercício 21
 
 
 
