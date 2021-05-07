@@ -208,7 +208,9 @@
 
     // Exercício 19
     let numeroEscolido = Number(prompt("Me diga um numero entre 1 e 7"))    
-
+    switch(numeroEscolido){
+            
+    }    
     // Exercício 20
 
 
